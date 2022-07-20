@@ -1,6 +1,6 @@
 .maze {
-  height: 50vw;
-  width: 50vw;
+  height: min(80vh, 80vw);
+  width: min(80vh, 80vw);
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,6 @@
 }
 
 .border-top-white {
-  /*border-top-color: white;*/
   border-top: none;
   margin-top: -1px;
   padding-top: 2px;
@@ -37,7 +36,6 @@
 }
 
 .border-right-white {
-  /*border-right-color: white;*/
   border-right: none;
   margin-right: -1px;
   padding-right: 2px;
@@ -48,7 +46,6 @@
 }
 
 .border-bottom-white {
-  /*border-bottom-color: white;*/
   border-bottom: none;
   margin-bottom: -1px;
   padding-bottom: 2px;
@@ -59,7 +56,6 @@
 }
 
 .border-left-white {
-  /*border-left-color: white;*/
   border-left: none;
   margin-left: -1px;
   padding-left: 2px;

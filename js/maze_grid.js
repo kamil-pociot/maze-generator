@@ -25,7 +25,7 @@ const printMaze = (maze) => {
 };
 
 export const printMazeInDOM = (graph) => {
-  let container = document.getElementById("container");
+  let container = document.getElementById("maze-container");
   container.innerHTML = "";
   container.appendChild(printMaze(graph));
 };

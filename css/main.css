@@ -269,3 +269,7 @@ textarea {
 body {
   font-family: 'PT Sans', sans-serif;
 }
+
+.container {
+  text-align: center;
+}
