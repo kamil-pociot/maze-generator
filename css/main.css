@@ -273,3 +273,15 @@ body {
 .container {
   text-align: center;
 }
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}

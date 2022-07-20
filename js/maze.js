@@ -3,6 +3,7 @@ import { createEmptyMaze, MAZE_LENGTH } from "./maze_utils";
 import { printMazeInDOM } from "./maze_grid";
 
 const maze = createEmptyMaze();
+let skipPrinting = false;
 
 async function dfs(graph, index) {
   let s = [];
@@ -13,8 +14,10 @@ async function dfs(graph, index) {
   explored[index] = true;
 
   while (explored.indexOf(false) !== -1) {
-    printMazeInDOM(graph);
-    await new Promise((resolve) => setTimeout(resolve, 10));
+    if (!skipPrinting) {
+      printMazeInDOM(graph);
+      await new Promise((resolve) => setTimeout(resolve, 10));
+    }
 
     let currentIndex = s.pop();
 
@@ -43,6 +46,11 @@ async function dfs(graph, index) {
   }
   printMazeInDOM(graph);
 }
+
+document.getElementById("skip-button").addEventListener("click", (e) => {
+  skipPrinting = true;
+  e.target.remove();
+});
 
 dfs(maze, 0)
   .then(() => console.log("success"))

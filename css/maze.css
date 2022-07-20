@@ -1,6 +1,6 @@
 .maze {
-  height: min(80vh, 80vw);
-  width: min(80vh, 80vw);
+  height: min(70vh, 80vw);
+  width: min(70vh, 80vw);
   margin: 50px auto;
   display: flex;
   flex-direction: column;
