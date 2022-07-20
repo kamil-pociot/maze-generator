@@ -1,7 +1,12 @@
+.maze-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .maze {
-  height: min(70vh, 80vw);
-  width: min(70vh, 80vw);
-  margin: 50px auto;
+  height: min(80vh, 80vw);
+  width: min(80vh, 80vw);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   border: solid black;
